@@ -1,0 +1,18 @@
+{
+  "env": {
+    "CLAUDE_CODE_TASK_LIST_ID": "2048-multiplayer"
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/workshop/my-team-marketplace/plugins/security/hooks/hook_wrapper.sh /workshop/my-team-marketplace/plugins/security/hooks/pii_prompt_guard.sh",
+            "timeout": 5000
+          }
+        ]
+      }
+    ]
+  }
+}
